@@ -35,7 +35,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255, 0.4);
+    background-color: rgba(255,255,255, 0.1);
     z-index: 9;
 }
 
@@ -92,14 +92,21 @@ video {
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 600;
-    color: #121212;
+    color: whitesmoke;
+}
+
+.nav-links a:hover {
+    color: #82BC23;
 }
 
 /*** M A I N ***/
 .main {
     width: 100%;
+    height: 100vh;
+    overflow: auto;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -110,39 +117,44 @@ video {
 
 .main .section {
     width: 100%;
+    height: 100vh;
+
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
 }
 
-.article {
+.hero-article {
     width: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: end;
+    gap: 5rem;
 }
 
-/** hero page **/
+/*** H E R O  P A G E ***/
 .hero-left {
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(5 1fr);
-    /* grid-template-rows: repeat(2 1fr); */
-    gap: 1rem;
-
-    border: 1px solid red;
+    width: 100%; 
 }
 
+/*** H E R O  R I G H T ***/
 .hero-right {
     width: 100%;
-    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
 }
 
 .hero-right h1 {
     font-size: 5rem;
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
 }
 
 .hero-right .endless {
@@ -155,4 +167,76 @@ video {
 
 .hero-right h4 {
     font-size: 1.5rem;
+}
+
+.hero-right p {
+    font-size: 1.3rem;
+}
+
+.hero-right .hero-btn {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #121212;
+    background-color: #82BC23;
+    cursor: pointer;
+}
+
+.hero-right .hero-btn:hover {
+    background-color: #A2D240;
+}
+
+/*** B A N N E R ***/
+.section-banner {
+    width: 100%;
+    background-color: green;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.section-banner .banner-article {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+}
+
+.banner-article .team-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.team-wrapper .hero-logo-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.hero-logo-box .hero-logo-div {
+    height: 6rem;
+    width: 6rem;
+}
+
+.hero-logo-div .img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-left .company-name {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
