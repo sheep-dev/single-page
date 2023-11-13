@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-txtColor: #1E453E;
+    --txtBlack: #121212;
+    --txtWhite: #f5f5f5;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Exo 2', sans-serif;
+    color: var(--primary-txtColor);
 }
 
 .container {
@@ -188,6 +195,7 @@ video {
 
 .hero-right p {
     font-size: 1.3rem;
+    color: var(--txtBlack);
 }
 
 .hero-right .hero-btn {
@@ -198,7 +206,7 @@ video {
     padding: 0.8rem 2rem;
     font-size: 1rem;
     font-weight: 600;
-    color: #121212;
+    color: var(--txtBlack);
     background-color: #82BC23;
     cursor: pointer;
 }
@@ -210,7 +218,7 @@ video {
 /*** B A N N E R ***/
 .section-banner {
     width: 100%;
-    /* background-color: green; */
+    /* background-color:var(--primary-txtColor); */
 
     display: flex;
     align-self: center;
@@ -257,6 +265,7 @@ video {
 .hero-logo-box .company-name {
     font-size: 1.2rem;
     font-weight: 600;
+    color: var(--txtWhite);
 }
 
 /********* B R E A K P O I N T S ***********/
