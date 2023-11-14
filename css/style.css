@@ -12,6 +12,8 @@
     --primary-bgColor: #1E453E;
     --cocktailColor: #82BC23;
     --blankaGreen: #A2D240;
+    --goldenRod: goldenrod;
+    --palevioletred: palevioletred;
 }
 
 html, body {
@@ -190,18 +192,16 @@ video {
 
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 1.3rem;
     padding: 0 2rem;
 }
 
 .hero-right h1 {
     font-size: 5rem;
-
-    display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
+    color: var(--goldenRod);
 }
 
 .hero-right .endless {
@@ -224,13 +224,13 @@ video {
 .hero-right .hero-btn {
     border: none;
     outline: none;
-    border-radius: 30px;
+    border-radius: 40px;
 
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: var(--txtBlack);
-    background-color: var(--cocktailColor);
+    color: var(--txtWhite);
+    background-color: var(--palevioletred);
     cursor: pointer;
 }
 
