@@ -1,5 +1,7 @@
 // MULTIPLE DROPDOWN
 const dropdowns = document.querySelectorAll('.dropdown');
+const bars =document.querySelector('.fa-bars')
+const close =document.querySelector('.fa-close')
 
 function closeDropdowns() {
   dropdowns.forEach(dropdown => {
@@ -13,18 +15,20 @@ dropdowns.forEach(dropdown => {
   btn.addEventListener('click', function() {
     if (content.style.display === 'block') {
       content.style.display = 'none';
+      close.style.display = 'block'
     } else {
       closeDropdowns();
       content.style.display = 'block';
+      close.style.display = 'none'
     }
   });
 });
 
-document.addEventListener('click', function(event) {
-  if (!event.target.closest('.dropdown-content') && !event.target.matches('.dropbtn')) {
-    closeDropdowns();
-  }
-});
+// document.addEventListener('click', function(event) {
+//   if (!event.target.closest('.dropdown-content') && !event.target.matches('.dropbtn')) {
+//     closeDropdowns();
+//   }
+// });
 
 
 // MULTIPLE TABS

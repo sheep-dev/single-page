@@ -4,21 +4,6 @@
     box-sizing: border-box;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-  }
-
 :root {
     --primary-txtColor: #1E453E;
     --txtBlack: #121212;
@@ -65,7 +50,6 @@ video {
 
 .video-overlay .bg-person {
     display: block;
-    border: 1px solid red;
 }
 
 .header {
@@ -141,6 +125,10 @@ video {
     color: var(--cocktail-bgColor);
 }
 
+.mobile-nav {
+    display: none;
+}
+
 /*** M A I N ***/
 .main {
     width: 100%;
@@ -150,7 +138,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 
     position: absolute;
     inset: 0;
@@ -169,22 +157,36 @@ video {
 
 .section .hero-article {
     width: 100%;
+    height: auto;
 
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 /*** H E R O  P A G E ***/
 .hero-article .hero-left {
     width: 50%;
-    display: none; 
+    
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.hero-left .bg-person {
+    height: 45rem;
+    width: fit-content;
+}
+
+.bg-person .img-fluid {
+    height: 100%;
+    width: 100%;
 }
 
 /*** H E R O  R I G H T ***/
 .hero-article .hero-right {
-    width: 50%;
+    width: 60%;
 
     display: flex;
     flex-direction: column;
@@ -237,6 +239,49 @@ video {
 }
 
 /*** B A N N E R ***/
+.pba-section-banner {
+    width: 100%;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.pba-section-banner .banner-article {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+.banner-article .pba-wrapper {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.pba-wrapper .hero-logo-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.hero-logo-box .pba-logo-div {
+    height: 6rem;
+    width: 6rem;
+}
+
+.pba-logo-div .img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
 .section-banner {
     width: 100%;
     /* background-color:var(--primary-txtColor); */
@@ -244,7 +289,7 @@ video {
     display: flex;
     align-self: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
 
 .section-banner .banner-article {
@@ -253,12 +298,21 @@ video {
     padding: 2rem;
 }
 
+.banner-article .banner-title-div {
+    width: 100%;
+    height: 7rem;
+}
+
+.banner-title-div .banner-title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .banner-article .team-wrapper {
     width: 100%;
 
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: 1.8rem;
 }
 
@@ -274,8 +328,8 @@ video {
 }
 
 .hero-logo-box .hero-logo-div {
-    height: 5.5rem;
-    width: 5.5rem;
+    height: 5rem;
+    width: 5rem;
 }
 
 .hero-logo-div .img-fluid {
@@ -284,7 +338,7 @@ video {
 }
 
 .hero-logo-box .company-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--txtBlack);
 }
@@ -301,25 +355,51 @@ video {
     }
 
     .hero-article .hero-left {
-        display: block;
-        max-width: 100%;
-        position: relative;
-        top: 0;
-        right: auto;
+        display: flex;
+        width: 80%;
+        align-self: self-end;
     }
 
     .hero-left .bg-person {
-        max-height: 10rem;
-        width: 100%;
-        position: absolute;
-        top: -20rem;
-        left: -10rem;
-        z-index: -10;
+        height: 45rem;
     }
 
     .hero-logo-box .hero-logo-div {
         height: 6rem;
         width: 6rem;
+    }
+
+    .hero-article .hero-right {
+        width: 100%;
+    }
+
+    .banner-article .pba-wrapper {
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+    
+    .pba-wrapper .hero-logo-box {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .hero-logo-box .pba-logo-div {
+        height: 6rem;
+        width: 6rem;
+    }
+    
+    .pba-logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
     }
 
 }
@@ -353,6 +433,10 @@ video {
         padding: 0;
     }
 
+    .mobile-nav {
+        display: none;
+    }
+
     /*** H E R O  P A G E ***/
     .main {
         overflow: auto;
@@ -373,16 +457,13 @@ video {
     }
 
     .hero-article .hero-left {
-        display: block;
-        width: 40%;
-
-        position: relative;
+        display: flex;
+        width: 80%;
+        align-self: self-end;
     }
 
     .hero-left .bg-person {
-        width: 40rem;
-        position: relative;
-        z-index: -10;
+        height: 30rem;
     }
 
     .bg-person .img-fluid {
@@ -412,9 +493,47 @@ video {
         font-size: 1.3rem;
     }
 
+    .banner-article .pba-wrapper {
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .pba-wrapper .hero-logo-box {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .hero-logo-box .pba-logo-div {
+        height: 6rem;
+        width: 6rem;
+    }
+    
+    .pba-logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
     .section-banner .banner-article {
         padding: 1rem;
     }
+
+    .banner-article .banner-title-div {
+        height: 13vh;
+    }
+
+    .banner-title-div .banner-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }  
 
     .banner-article .team-wrapper {
         width: 100%;
@@ -424,12 +543,12 @@ video {
     }
 
     .hero-logo-box .hero-logo-div {
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 6.5rem;
+        width: 6.5rem;
     }
 
     .hero-logo-box .company-name {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -444,27 +563,77 @@ video {
     }
 
     .header .nav {
-        flex-direction: column;
+        display: none;
+    }
+
+    .header .mobile-nav {
         width: 100%;
+        padding: 1rem;
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0;
+
+        background-color: var(--txtWhite);
+    }
+
+    .mobile-nav .logo-div {
+        width: 2rem;
+        height: 1.8rem;
+
+        position: absolute;
+        top: 0.8rem;
+    }
+
+    .logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown .dropbtn {
+        color: var(--primary-txtColor);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0.3rem 0 0 0;
+
+        align-self: self-end;
+    }
+
+    .dropdown .dropdown-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+        padding-top: 2rem;
+
+        background-color: var(--txtWhite);
+    }
+
+    .dropdown-content li {
+        list-style: none;
         padding: 1rem 0;
     }
 
-    .nav .logo-container {
-        padding: 0 1rem;
-    }
-
-    .logo-container .menu {
-        display: block;
-    }
-
-    .nav .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-
-        width: 100%;
-        padding: 1.5rem 0 0 0;
+    .dropdown-content li a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary-txtColor);
+        text-decoration: none;
     }
 
     /*** H E R O  P A G E ***/
@@ -491,19 +660,13 @@ video {
     }
 
     .hero-article .hero-left {
-        display: block;
-        width: 40%;
+        display: flex;
+        width: 80%;
+        align-self: self-end;
     }
 
     .hero-left .bg-person {
-        width: 30rem;
-        position: relative;
-        left: -2.5rem;
-        padding: 0;
-        
-        
-        display: flex;
-        align-items: flex-end;
+        height: 30rem;
     }
 
     .bg-person .img-fluid {
@@ -533,9 +696,47 @@ video {
         font-size: 1.3rem;
     }
 
+    .banner-article .pba-wrapper {
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    
+    .pba-wrapper .hero-logo-box {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .hero-logo-box .pba-logo-div {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    
+    .pba-logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
     .section-banner .banner-article {
         padding: 1.5rem 1rem;
     }
+
+    .banner-article .banner-title-div {
+        height: 10vh;
+    }
+
+    .banner-title-div .banner-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }  
 
     .banner-article .team-wrapper {
         width: 100%;
@@ -545,12 +746,12 @@ video {
     }
 
     .hero-logo-box .hero-logo-div {
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 5.5rem;
+        width: 5.5rem;
     }
 
     .hero-logo-box .company-name {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -566,33 +767,83 @@ video {
     }
 
     .header .nav {
-        flex-direction: column;
+        display: none;
+    }
+
+    .header .mobile-nav {
         width: 100%;
+        padding: 1rem;
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0;
+
+        background-color: var(--txtWhite);
+    }
+
+    .mobile-nav .logo-div {
+        width: 2rem;
+        height: 1.8rem;
+
+        position: absolute;
+        top: 0.8rem;
+    }
+
+    .logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown .dropbtn {
+        color: var(--primary-txtColor);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0.3rem 0 0 0;
+
+        align-self: self-end;
+    }
+
+    .dropdown .dropdown-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+        padding-top: 2rem;
+
+        background-color: var(--txtWhite);
+    }
+
+    .dropdown-content li {
+        list-style: none;
         padding: 1rem 0;
     }
 
-    .nav .logo-container {
-        padding: 0 1rem;
-    }
-
-    .logo-container .menu {
-        display: block;
-    }
-
-    .nav .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-
-        width: 100%;
-        padding: 1.5rem 0 0 0;
+    .dropdown-content li a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary-txtColor);
+        text-decoration: none;
     }
 
     /*** H E R O  P A G E ***/
     .main {
         overflow: auto;
-        gap: 4rem;
+        gap: 2rem;
 
         align-items: start;
         justify-content: start;
@@ -634,24 +885,63 @@ video {
         font-size: 1.3rem;
     }
 
+    .banner-article .pba-wrapper {
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .pba-wrapper .hero-logo-box {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .hero-logo-box .pba-logo-div {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    .pba-logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
     .section-banner .banner-article {
         padding: 1rem;
     }
+
+    .banner-article .banner-title-div {
+        height: 10vh;
+    }
+
+    .banner-title-div .banner-title {
+        font-size: 2.3rem;
+        text-align: center;
+    }  
 
     .banner-article .team-wrapper {
         width: 100%;
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-content: flex-start;
     }
 
     .hero-logo-box .hero-logo-div {
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 4.8rem;
+        width: 4.8rem;
     }
 
     .hero-logo-box .company-name {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -666,27 +956,77 @@ video {
     }
 
     .header .nav {
-        flex-direction: column;
+        display: none;
+    }
+
+    .header .mobile-nav {
         width: 100%;
+        padding: 1rem;
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0;
+
+        background-color: var(--txtWhite);
+    }
+
+    .mobile-nav .logo-div {
+        width: 2rem;
+        height: 1.8rem;
+
+        position: absolute;
+        top: 0.8rem;
+    }
+
+    .logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown .dropbtn {
+        color: var(--primary-txtColor);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0.3rem 0 0 0;
+
+        align-self: self-end;
+    }
+
+    .dropdown .dropdown-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+        padding-top: 2rem;
+
+        background-color: var(--txtWhite);
+    }
+
+    .dropdown-content li {
+        list-style: none;
         padding: 1rem 0;
     }
 
-    .nav .logo-container {
-        padding: 0 1rem;
-    }
-
-    .logo-container .menu {
-        display: block;
-    }
-
-    .nav .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-
-        width: 100%;
-        padding: 1.5rem 0 0 0;
+    .dropdown-content li a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary-txtColor);
+        text-decoration: none;
     }
 
     /*** H E R O  P A G E ***/
@@ -734,9 +1074,47 @@ video {
         font-size: 1rem;
     }
 
+    .banner-article .pba-wrapper {
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .pba-wrapper .hero-logo-box {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .hero-logo-box .pba-logo-div {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    .pba-logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
     .section-banner .banner-article {
         padding: 1rem;
     }
+
+    .banner-article .banner-title-div {
+        height: 15vh;
+    }
+
+    .banner-title-div .banner-title {
+        font-size: 2rem;
+        text-align: center;
+    }  
 
     .banner-article .team-wrapper {
         width: 100%;
@@ -746,8 +1124,8 @@ video {
     }
 
     .hero-logo-box .hero-logo-div {
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 4.5rem;
+        width: 4.5rem;
     }
 
     .hero-logo-box .company-name {
@@ -766,27 +1144,77 @@ video {
     }
 
     .header .nav {
-        flex-direction: column;
+        display: none;
+    }
+
+    .header .mobile-nav {
         width: 100%;
+        padding: 1rem;
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0;
+
+        background-color: var(--txtWhite);
+    }
+
+    .mobile-nav .logo-div {
+        width: 2rem;
+        height: 1.8rem;
+
+        position: absolute;
+        top: 0.8rem;
+    }
+
+    .logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown .dropbtn {
+        color: var(--primary-txtColor);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0.3rem 0 0 0;
+
+        align-self: self-end;
+    }
+
+    .dropdown .dropdown-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+        padding-top: 2rem;
+
+        background-color: var(--txtWhite);
+    }
+
+    .dropdown-content li {
+        list-style: none;
         padding: 1rem 0;
     }
 
-    .nav .logo-container {
-        padding: 0 1rem;
-    }
-
-    .logo-container .menu {
-        display: block;
-    }
-
-    .nav .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-
-        width: 100%;
-        padding: 1.5rem 0 0 0;
+    .dropdown-content li a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary-txtColor);
+        text-decoration: none;
     }
 
     /*** H E R O  P A G E ***/
@@ -838,19 +1266,63 @@ video {
         padding: 1rem;
     }
 
+    .pba-section-banner .banner-article {
+        padding: 1rem;
+    }
+
+    .banner-article .pba-wrapper {
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .pba-wrapper .hero-logo-box {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .hero-logo-box .pba-logo-div {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    .pba-logo-div .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-article .banner-title-div {
+        height: 10vh;
+    }
+
+    .banner-title-div .banner-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
     .banner-article .team-wrapper {
         width: 100%;
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
 
     .hero-logo-box .hero-logo-div {
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 4rem;
+        width: 4rem;
     }
 
     .hero-logo-box .company-name {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
