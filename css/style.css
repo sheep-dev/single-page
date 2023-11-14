@@ -202,7 +202,11 @@ video {
     font-size: 5rem;
     gap: 1rem;
     width: 100%;
-    color: var(--palevioletred);
+    /* background: linear-gradient(#82BC23, goldenrod);
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: #1E453E; */
+    color: #FF3131;
+    /* background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%); */
 }
 
 .hero-right .endless {
@@ -218,8 +222,9 @@ video {
 }
 
 .hero-right p {
-    font-size: 1.3rem;
-    color: var(--txtBlack);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--goldenRod);
 }
 
 .hero-right .hero-btn {
@@ -231,8 +236,10 @@ video {
     font-size: 2rem;
     font-weight: 600;
     color: var(--txtWhite);
-    background-color: var(--goldenRod);
+    background-color: #0F52BA;
     cursor: pointer;
+
+    text-decoration: none;
 }
 
 /* .hero-right .hero-btn:hover {
