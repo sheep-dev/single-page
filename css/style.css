@@ -202,7 +202,7 @@ video {
     font-size: 5rem;
     gap: 1rem;
     width: 100%;
-    color: var(--txtWhite);
+    color: var(--palevioletred);
 }
 
 .hero-right .endless {
