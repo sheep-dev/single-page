@@ -231,12 +231,12 @@ video {
     font-size: 2rem;
     font-weight: 600;
     color: var(--txtWhite);
-    background-color: var(--palevioletred);
+    background-color: var(--blankaGreen);
     cursor: pointer;
 }
 
 .hero-right .hero-btn:hover {
-    background-color: var(--blankaGreen);
+    background-color: var(--cocktailColor);
 }
 
 /*** B A N N E R ***/
