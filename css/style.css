@@ -194,7 +194,7 @@ video {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1.3rem;
+    gap: 2.5rem;
     padding: 0 2rem;
 }
 
@@ -202,7 +202,7 @@ video {
     font-size: 5rem;
     gap: 1rem;
     width: 100%;
-    color: var(--goldenRod);
+    color: var(--txtWhite);
 }
 
 .hero-right .endless {
@@ -231,13 +231,13 @@ video {
     font-size: 2rem;
     font-weight: 600;
     color: var(--txtWhite);
-    background-color: var(--blankaGreen);
+    background-color: var(--goldenRod);
     cursor: pointer;
 }
 
-.hero-right .hero-btn:hover {
-    background-color: var(--cocktailColor);
-}
+/* .hero-right .hero-btn:hover {
+    background-color: var(--);
+} */
 
 /*** B A N N E R ***/
 .pba-section-banner {
