@@ -205,6 +205,16 @@ video {
     padding: 0 2rem;
 }
 
+.hero-right .hero-logo {
+    height: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.hero-logo .img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
 .hero-right h1 {
     font-size: 4.5rem;
     gap: 1rem;
