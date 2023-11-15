@@ -164,26 +164,30 @@ video {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     gap: 2rem;
 }
 
 /*** H E R O  P A G E ***/
 .hero-article .hero-left {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-left .bg-person {
-    height: 45rem;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bg-person .img-fluid {
-    height: 100%;
     width: 100%;
 }
 
@@ -200,7 +204,7 @@ video {
 }
 
 .hero-right h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     gap: 1rem;
     width: 100%;
     /* background: linear-gradient(#82BC23, goldenrod);
@@ -224,7 +228,7 @@ video {
 }
 
 .hero-right p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--goldenRod);
 }
