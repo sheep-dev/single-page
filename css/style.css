@@ -162,6 +162,7 @@ video {
     height: auto;
 
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: end;
     gap: 2rem;
