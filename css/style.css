@@ -207,7 +207,7 @@ video {
 
 .hero-right .hero-logo {
     height: 2.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .hero-logo .img-fluid {
@@ -249,6 +249,7 @@ video {
     border: none;
     outline: none;
     border-radius: 40px;
+    margin-top: 2rem;
 
     padding: 1rem 3rem;
     font-size: 2rem;
