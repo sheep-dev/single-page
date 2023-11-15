@@ -23,10 +23,6 @@ html, body {
     color: var(--primary-txtColor);
 }
 
-.container {
-    max-width: 1280px;
-}
-
 .bg-video {
     width: 100vw;
 }
@@ -49,88 +45,7 @@ video {
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
     z-index: 9;
-    opacity: 50%;
-}
-
-.video-overlay .bg-person {
-    display: block;
-}
-
-.header {
-    width: 100%;
-    background-color: transparent;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    z-index: 999;
-}
-
-.header .nav {
-    width: 100%;
-    padding: 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav .logo-container {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-container .menu {
-    display: none;
-}
-
-.logo-container .logo-div {
-    height: 2rem;
-    width: 2rem;
-}
-
-.logo-div .img-fluid {
-    height: 100%;
-    width: 100%;
-}
-
-.nav .nav-links {
-    /* width: 50%; */
-
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 1.5rem;
-}
-
-.nav-links li {
-    list-style: none;
-    /* background-color: #F9FCFF; */
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--txtWhite);
-}
-
-.nav-links a:hover {
-    color: var(--cocktail-bgColor);
-}
-
-.mobile-nav {
-    display: none;
+    opacity: 70%;
 }
 
 /*** M A I N ***/
@@ -155,8 +70,6 @@ video {
 
     display: flex;
     align-items: center;
-    margin-top: 7rem;
-
 }
 
 .section .hero-article {
@@ -164,8 +77,8 @@ video {
     height: auto;
 
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
     gap: 2rem;
 }
@@ -173,9 +86,8 @@ video {
 /*** H E R O  P A G E ***/
 .hero-article .hero-left {
     width: 100%;
-    height: 100%;
     
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -191,6 +103,7 @@ video {
 
 .bg-person .img-fluid {
     width: 100%;
+    height: 100%;
 }
 
 /*** H E R O  R I G H T ***/
@@ -201,12 +114,12 @@ video {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 2.5rem;
+    gap: 1rem;
     padding: 0 2rem;
 }
 
 .hero-right .hero-logo {
-    height: 2.8rem;
+    height: 2.3rem;
     margin-bottom: 1rem;
 }
 
@@ -216,7 +129,7 @@ video {
 }
 
 .hero-right h1 {
-    font-size: 4.5rem;
+    font-size: 2rem;
     gap: 1rem;
     width: 100%;
     /* background: linear-gradient(#82BC23, goldenrod);
@@ -227,1129 +140,156 @@ video {
     /* background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%); */
 }
 
-.hero-right .endless {
-    color: goldenrod;
-}
-
-.hero-right .life {
-    color: palevioletred;
-}
-
-.hero-right h4 {
-    font-size: 1.5rem;
-}
-
 .hero-right p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--goldenRod);
 }
 
-.hero-right .hero-btn {
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    margin-top: 2rem;
-
-    padding: 1rem 3rem;
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--txtWhite);
-    background-color: #0F52BA;
-    cursor: pointer;
-
-    text-decoration: none;
+.hero-right .playBtnDiv {
+    width: auto;
+    height: 4.5rem;
+    margin-top: 0.5rem;
 }
 
-/* .hero-right .hero-btn:hover {
-    background-color: var(--);
-} */
-
-/*** B A N N E R ***/
-.pba-section-banner {
-    width: 100%;
-
-    display: flex;
-    align-self: center;
-    justify-content: center;
+.playBtnDiv:hover {
+    scale: (1.1);
 }
 
-.pba-section-banner .banner-article {
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-}
-
-.banner-article .pba-wrapper {
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
-}
-
-.pba-wrapper .hero-logo-box {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0.5rem;
-}
-
-.hero-logo-box .pba-logo-div {
-    height: 6rem;
-    width: 6rem;
-}
-
-.pba-logo-div .img-fluid {
+.playBtnDiv .img-fluid {
     height: 100%;
     width: 100%;
 }
 
-.section-banner {
-    width: 100%;
-    /* background-color:var(--primary-txtColor); */
-
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin-top: 10rem;
-}
-
-.section-banner .banner-article {
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-}
-
-.banner-article .banner-title-div {
-    width: 100%;
-    height: 7rem;
-}
-
-.banner-title-div .banner-title {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.banner-article .team-wrapper {
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1.8rem;
-}
-
-.team-wrapper .hero-logo-box {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0.5rem;
-}
-
-.hero-logo-box .hero-logo-div {
-    height: 5rem;
-    width: 5rem;
-}
-
-.hero-logo-div .img-fluid {
-    height: 100%;
-    width: 100%;
-}
-
-.hero-logo-box .company-name {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--txtBlack);
-}
 
 /********* B R E A K P O I N T S ***********/
 
-@media only screen and (min-width: 2000px) {
-    .video-overlay .bg-person {
-        display: none;
-    }
-
-    .main {
-        justify-content: start;
-    }
-
+@media only screen and (min-width: 576px){
     .hero-article .hero-left {
         display: flex;
-        width: 80%;
-        align-self: self-end;
     }
 
-    .hero-left .bg-person {
-        height: 45rem;
-    }
-
-    .hero-logo-box .hero-logo-div {
-        height: 6rem;
-        width: 6rem;
-    }
-
-    .hero-article .hero-right {
-        width: 100%;
-    }
-
-    .banner-article .pba-wrapper {
-        width: 100%;
-    
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 2rem;
-    }
-    
-    .pba-wrapper .hero-logo-box {
-        width: 100%;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .hero-logo-box .pba-logo-div {
-        height: 6rem;
-        width: 6rem;
-    }
-    
-    .pba-logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-}
-
-/** large devices **/
-@media only screen and (min-width: 992px) and (max-width: 1279px) {
-    .video-overlay .bg-person {
+    .hero-right .hero-logo {
         display: none;
     }
 
-    .header .nav {
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .nav .logo-container {
-        padding: 0 1rem;
-    }
-
-    .logo-container .menu {
-        display: none;
-    }
-
-    .nav .nav-links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        padding: 0;
-    }
-
-    .mobile-nav {
-        display: none;
-    }
-
-    /*** H E R O  P A G E ***/
-    .main {
-        overflow: auto;
-        gap: 0rem;
-
-        align-items: start;
-        justify-content: start;
-    }
-
-    .main::-webkit-scrollbar {
-        display: none;
-        scrollbar-width: none;
-    }
-
-    .main .section {
-        margin-top: 7rem;
-        padding: 1rem 1rem 1.5rem 1rem;
-    }
-
-    .hero-article .hero-left {
-        display: flex;
-        width: 80%;
-        align-self: self-end;
-    }
-
-    .hero-left .bg-person {
-        height: 30rem;
-    }
-
-    .bg-person .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .hero-article .hero-right {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    .hero-right .hero-btn {
-        font-size: 1rem;
-    }
-
-    /*** B A N N E R ***/
-    .hero-right h1{
-        font-size: 3.5rem;
-    }
-
-    .hero-right h4 {
-        font-size: 1.5rem;
+    .hero-right h1 {
+        font-size: 2.5rem;
     }
 
     .hero-right p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
-    .banner-article .pba-wrapper {
-        width: 100%;
-    
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-    
-    .pba-wrapper .hero-logo-box {
-        width: 100%;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .hero-logo-box .pba-logo-div {
-        height: 6rem;
-        width: 6rem;
-    }
-    
-    .pba-logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .section-banner .banner-article {
-        padding: 1rem;
-    }
-
-    .banner-article .banner-title-div {
-        height: 13vh;
-    }
-
-    .banner-title-div .banner-title {
-        font-size: 2.5rem;
-        text-align: center;
-    }  
-
-    .banner-article .team-wrapper {
-        width: 100%;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hero-logo-box .hero-logo-div {
-        height: 6.5rem;
-        width: 6.5rem;
-    }
-
-    .hero-logo-box .company-name {
-        font-size: 1.3rem;
+    .hero-right .playBtnDiv {
+        height: 5.5rem;
     }
 }
 
-/** medium devices **/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .video-overlay .bg-person {
-        display: none;
-    }
-
-    .header {
-         background-color: var(--txtWhite);
-    }
-
-    .header .nav {
-        display: none;
-    }
-
-    .header .mobile-nav {
-        width: 100%;
-        padding: 1rem;
-
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-
-        position: fixed;
-        top: 0;
-
-        background-color: var(--txtWhite);
-    }
-
-    .mobile-nav .logo-div {
-        width: 2rem;
-        height: 1.8rem;
-
-        position: absolute;
-        top: 0.8rem;
-    }
-
-    .logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .dropdown {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdown .dropbtn {
-        color: var(--primary-txtColor);
-        border: none;
-        outline: none;
-        background-color: transparent;
-        font-size: 1rem;
-        padding: 0.3rem 0 0 0;
-
-        align-self: self-end;
-    }
-
-    .dropdown .dropdown-content {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-        padding-top: 2rem;
-
-        background-color: var(--txtWhite);
-    }
-
-    .dropdown-content li {
-        list-style: none;
-        padding: 1rem 0;
-    }
-
-    .dropdown-content li a {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--primary-txtColor);
-        text-decoration: none;
-    }
-
-    /*** H E R O  P A G E ***/
-    .main {
-        overflow: auto;
-        gap: 0rem;
-
-        align-items: start;
-        justify-content: start;
-    }
-
-    .main::-webkit-scrollbar {
-        display: none;
-        scrollbar-width: none;
-    }
-
-    .main .section {
-        margin-top: 4rem;
-        padding: 3rem 1rem 1.5rem 1rem;
-    }
-
-    .section .hero-article {
-        align-items: start;
-    }
-
-    .hero-article .hero-left {
-        display: flex;
-        width: 80%;
-        align-self: self-end;
-    }
-
+@media only screen and (min-width: 768px) {
     .hero-left .bg-person {
-        height: 30rem;
+        height: 21.5rem;
+        width: auto;
     }
 
-    .bg-person .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .hero-article .hero-right {
-        width: 100%;
-        padding: 0;
-    }
-
-    .hero-right .hero-btn {
-        font-size: 1rem;
-    }
-
-    /*** B A N N E R ***/
-    .hero-right h1{
+    .hero-right h1 {
         font-size: 3rem;
     }
 
-    .hero-right h4 {
-        font-size: 1.5rem;
+    .hero-right p{
+        font-size: 1.6rem;
+        padding: 0 10%;
     }
 
-    .hero-right p {
-        font-size: 1.3rem;
-    }
-
-    .banner-article .pba-wrapper {
-        width: 100%;
-    
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-    }
-    
-    .pba-wrapper .hero-logo-box {
-        width: 100%;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .hero-logo-box .pba-logo-div {
-        height: 4.5rem;
-        width: 4.5rem;
-    }
-    
-    .pba-logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .section-banner .banner-article {
-        padding: 1.5rem 1rem;
-    }
-
-    .banner-article .banner-title-div {
-        height: 10vh;
-    }
-
-    .banner-title-div .banner-title {
-        font-size: 2.5rem;
-        text-align: center;
-    }  
-
-    .banner-article .team-wrapper {
-        width: 100%;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hero-logo-box .hero-logo-div {
-        height: 5.5rem;
-        width: 5.5rem;
-    }
-
-    .hero-logo-box .company-name {
-        font-size: 1.1rem;
+    .hero-right .playBtnDiv {
+        height: 6rem;
     }
 }
 
-
-/** standard devices **/
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .video-overlay .bg-person {
-        display: none;
-    }
-
-    .header {
-         background-color: var(--txtWhite);
-    }
-
-    .header .nav {
-        display: none;
-    }
-
-    .header .mobile-nav {
-        width: 100%;
-        padding: 1rem;
-
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-
-        position: fixed;
-        top: 0;
-
-        background-color: var(--txtWhite);
-    }
-
-    .mobile-nav .logo-div {
-        width: 2rem;
-        height: 1.8rem;
-
-        position: absolute;
-        top: 0.8rem;
-    }
-
-    .logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .dropdown {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdown .dropbtn {
-        color: var(--primary-txtColor);
-        border: none;
-        outline: none;
-        background-color: transparent;
-        font-size: 1rem;
-        padding: 0.3rem 0 0 0;
-
-        align-self: self-end;
-    }
-
-    .dropdown .dropdown-content {
-        display: none;
-        flex-direction: column;
+@media only screen and (min-width: 992px) {
+    .section .hero-article {
+        flex-direction: row-reverse;
         align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-        padding-top: 2rem;
-
-        background-color: var(--txtWhite);
+        gap: 0;
     }
 
-    .dropdown-content li {
-        list-style: none;
-        padding: 1rem 0;
+    .hero-right .hero-logo {
+        display: flex;
     }
 
-    .dropdown-content li a {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--primary-txtColor);
-        text-decoration: none;
+    .hero-left .bg-person {
+        height: 17.5rem;
     }
 
-    /*** H E R O  P A G E ***/
-    .main {
-        overflow: auto;
-        gap: 2rem;
-
-        align-items: start;
-        justify-content: start;
-    }
-
-    .main::-webkit-scrollbar {
-        display: none;
-        scrollbar-width: none;
-    }
-
-    .main .section {
-        margin-top: 4rem;
-        padding: 2.3rem 1rem 1.5rem 1rem;
-    }
-
-    .hero-article .hero-left {
-        display: none;
-    }
-
-    .hero-article .hero-right {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    .hero-right .hero-btn {
-        font-size: 1rem;
-    }
-
-    /*** B A N N E R ***/
-    .hero-right h1{
-        font-size: 3.5rem;
-    }
-
-    .hero-right h4 {
-        font-size: 1.5rem;
+    .hero-right h1 {
+        font-size: 2.8rem;
     }
 
     .hero-right p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
-    .banner-article .pba-wrapper {
-        width: 100%;
-    
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-    
-    .pba-wrapper .hero-logo-box {
-        width: 100%;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .hero-logo-box .pba-logo-div {
-        height: 4rem;
-        width: 4rem;
-    }
-    
-    .pba-logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .section-banner .banner-article {
-        padding: 1rem;
-    }
-
-    .banner-article .banner-title-div {
-        height: 10vh;
-    }
-
-    .banner-title-div .banner-title {
-        font-size: 2.3rem;
-        text-align: center;
-    }  
-
-    .banner-article .team-wrapper {
-        width: 100%;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: flex-start;
-    }
-
-    .hero-logo-box .hero-logo-div {
+    .hero-right .playBtnDiv {
         height: 4.8rem;
-        width: 4.8rem;
-    }
-
-    .hero-logo-box .company-name {
-        font-size: 1.1rem;
     }
 }
 
-/** small devices **/
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-    .video-overlay .bg-person {
-        display: none;
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
     }
 
-    .header {
-         background-color: var(--txtWhite);
+    .hero-left .bg-person {
+        height: 23rem;
     }
 
-    .header .nav {
-        display: none;
+    .hero-right .hero-logo {
+        margin-bottom: 2rem;
     }
 
-    .header .mobile-nav {
-        width: 100%;
-        padding: 1rem;
-
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-
-        position: fixed;
-        top: 0;
-
-        background-color: var(--txtWhite);
-    }
-
-    .mobile-nav .logo-div {
-        width: 2rem;
-        height: 1.8rem;
-
-        position: absolute;
-        top: 0.8rem;
-    }
-
-    .logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .dropdown {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdown .dropbtn {
-        color: var(--primary-txtColor);
-        border: none;
-        outline: none;
-        background-color: transparent;
-        font-size: 1rem;
-        padding: 0.3rem 0 0 0;
-
-        align-self: self-end;
-    }
-
-    .dropdown .dropdown-content {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-        padding-top: 2rem;
-
-        background-color: var(--txtWhite);
-    }
-
-    .dropdown-content li {
-        list-style: none;
-        padding: 1rem 0;
-    }
-
-    .dropdown-content li a {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--primary-txtColor);
-        text-decoration: none;
-    }
-
-    /*** H E R O  P A G E ***/
-    .main {
-        overflow: auto;
-        gap: 4rem;
-
-        align-items: start;
-        justify-content: start;
-    }
-
-    .main::-webkit-scrollbar {
-        display: none;
-        scrollbar-width: none;
-    }
-
-    .main .section {
-        margin-top: 4rem;
-        padding: 2.3rem 1rem;
-    }
-
-    .hero-article .hero-left {
-        display: none;
-    }
-
-    .hero-article .hero-right {
-        width: 100%;
-        padding: 0;
-    }
-
-    .hero-right .hero-btn {
-        font-size: 0.9rem;
-    }
-
-    /*** B A N N E R ***/
-    .hero-right h1{
+    .hero-right h1 {
         font-size: 3.3rem;
-    }
-
-    .hero-right h4 {
-        font-size: 1.3rem;
+        padding: 0 2rem;
     }
 
     .hero-right p {
-        font-size: 1rem;
-    }
-
-    .banner-article .pba-wrapper {
-        width: 100%;
-    
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    
-    .pba-wrapper .hero-logo-box {
-        width: 100%;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .hero-logo-box .pba-logo-div {
-        height: 4rem;
-        width: 4rem;
-    }
-    
-    .pba-logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .section-banner .banner-article {
-        padding: 1rem;
-    }
-
-    .banner-article .banner-title-div {
-        height: 15vh;
-    }
-
-    .banner-title-div .banner-title {
-        font-size: 2rem;
-        text-align: center;
-    }  
-
-    .banner-article .team-wrapper {
-        width: 100%;
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-logo-box .hero-logo-div {
-        height: 4.5rem;
-        width: 4.5rem;
-    }
-
-    .hero-logo-box .company-name {
-        font-size: 1rem;
-    }
-}
-
-/** extra small devices **/
-@media only screen and (min-width: 280px) and (max-width: 319px) {
-    .video-overlay .bg-person {
-        display: none;
-    }
-
-    .header {
-         background-color: var(--txtWhite);
-    }
-
-    .header .nav {
-        display: none;
-    }
-
-    .header .mobile-nav {
-        width: 100%;
-        padding: 1rem;
-
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-
-        position: fixed;
-        top: 0;
-
-        background-color: var(--txtWhite);
-    }
-
-    .mobile-nav .logo-div {
-        width: 2rem;
-        height: 1.8rem;
-
-        position: absolute;
-        top: 0.8rem;
-    }
-
-    .logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .dropdown {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdown .dropbtn {
-        color: var(--primary-txtColor);
-        border: none;
-        outline: none;
-        background-color: transparent;
-        font-size: 1rem;
-        padding: 0.3rem 0 0 0;
-
-        align-self: self-end;
-    }
-
-    .dropdown .dropdown-content {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-        padding-top: 2rem;
-
-        background-color: var(--txtWhite);
-    }
-
-    .dropdown-content li {
-        list-style: none;
-        padding: 1rem 0;
-    }
-
-    .dropdown-content li a {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--primary-txtColor);
-        text-decoration: none;
-    }
-
-    /*** H E R O  P A G E ***/
-    .main {
-        overflow: auto;
-        gap: 4rem;
-
-        align-items: start;
-        justify-content: start;
-    }
-
-    .main::-webkit-scrollbar {
-        display: none;
-        scrollbar-width: none;
-    }
-
-    .main .section {
-        margin-top: 4rem;
-        padding: 2.3rem 1rem;
-    }
-
-    .hero-article .hero-left {
-        display: none;
-    }
-
-    .hero-article .hero-right {
-        width: 100%;
-        padding: 0;
-    }
-
-    .hero-right .hero-btn {
-        font-size: 0.9rem;
-    }
-
-    /*** B A N N E R ***/
-    .hero-right h1{
-        font-size: 3.3rem;
-    }
-
-    .hero-right h4 {
-        font-size: 1.3rem;
-    }
-
-    .hero-right p {
-        font-size: 1rem;
-    }
-
-    .section-banner .banner-article {
-        padding: 1rem;
-    }
-
-    .pba-section-banner .banner-article {
-        padding: 1rem;
-    }
-
-    .banner-article .pba-wrapper {
-        width: 100%;
-    
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    
-    .pba-wrapper .hero-logo-box {
-        width: 100%;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .hero-logo-box .pba-logo-div {
-        height: 4rem;
-        width: 4rem;
-    }
-    
-    .pba-logo-div .img-fluid {
-        height: 100%;
-        width: 100%;
-    }
-
-    .banner-article .banner-title-div {
-        height: 10vh;
-    }
-
-    .banner-title-div .banner-title {
         font-size: 1.5rem;
-        text-align: center;
     }
 
+    .hero-right .playBtnDiv {
+        height: 5.5rem;
+    }
+}
 
-    .banner-article .team-wrapper {
-        width: 100%;
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+@media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
     }
 
-    .hero-logo-box .hero-logo-div {
-        height: 4rem;
-        width: 4rem;
+    .section .hero-article {
+        justify-content: space-between;
     }
 
-    .hero-logo-box .company-name {
-        font-size: 0.9rem;
+    .hero-left .bg-person {
+        height: 30rem;
+        width: 40vw;
+    }
+
+    .hero-right .hero-logo {
+        height: 3rem;
+    }
+
+    .hero-right h1{
+        padding: 0;
+        font-size: 3.7rem;
+    }
+
+    .hero-right p{
+        font-size: 1.8rem;
+    }
+
+    .hero-right .playBtnDiv {
+        height: 6rem;
     }
 }
