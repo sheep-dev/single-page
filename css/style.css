@@ -311,8 +311,8 @@ video {
     }
 
     .hero-right .hero-headings {
-        height: 17rem;
-        width: 60rem;
+        height: 15rem;
+        width: 40rem;
 
         display: flex;
         align-items: center;
