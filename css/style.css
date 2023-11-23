@@ -128,6 +128,16 @@ video {
     width: 100%;
 }
 
+.hero-right .hero-headings {
+    width: 19rem;
+    height: 7rem;
+}
+
+.hero-headings .img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
 .hero-right h1 {
     font-size: 2rem;
     gap: 1rem;
@@ -174,6 +184,11 @@ video {
         display: none;
     }
 
+    .hero-right .hero-headings {
+        width: 33rem;
+        height: 10rem;
+    }
+
     .hero-right h1 {
         font-size: 2.5rem;
     }
@@ -191,6 +206,11 @@ video {
     .hero-left .bg-person {
         height: 21.5rem;
         width: auto;
+    }
+
+    .hero-right .hero-headings {
+        width: 43rem;
+        height: 13rem;
     }
 
     .hero-right h1 {
@@ -222,6 +242,11 @@ video {
         height: 17.5rem;
     }
 
+    .hero-right .hero-headings {
+        width: 30rem;
+        height: 9rem;
+    }
+
     .hero-right h1 {
         font-size: 2.8rem;
     }
@@ -242,6 +267,11 @@ video {
 
     .hero-left .bg-person {
         height: 23rem;
+    }
+    
+    .hero-right .hero-headings {
+        width: 35rem;
+        height: 13rem;
     }
 
     .hero-right .hero-logo {
@@ -264,7 +294,7 @@ video {
 
 @media only screen and (min-width: 1440px) {
     .container {
-        max-width: 1440px;
+        max-width: 1920px;
     }
 
     .section .hero-article {
@@ -272,12 +302,21 @@ video {
     }
 
     .hero-left .bg-person {
-        height: 28rem;
-        width: 40vw;
+        height: 37rem;
+        width: 100%;
     }
 
     .hero-right .hero-logo {
         height: 3rem;
+    }
+
+    .hero-right .hero-headings {
+        height: 17rem;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-right h1{
