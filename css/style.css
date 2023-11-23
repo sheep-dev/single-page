@@ -302,8 +302,8 @@ video {
     }
 
     .hero-left .bg-person {
-        height: 35rem;
-        width: 35rem;
+        height: 37rem;
+        width: 100%;
     }
 
     .hero-right .hero-logo {
@@ -311,7 +311,7 @@ video {
     }
 
     .hero-right .hero-headings {
-        height: 17rem;
+        height: 15rem;
         width: 100%;
 
         display: flex;
