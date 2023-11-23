@@ -302,7 +302,7 @@ video {
     }
 
     .hero-left .bg-person {
-        height: 37rem;
+        height: 32rem;
         width: 100%;
     }
 
@@ -311,8 +311,8 @@ video {
     }
 
     .hero-right .hero-headings {
-        height: 15rem;
-        width: 100%;
+        height: 17rem;
+        width: 60rem;
 
         display: flex;
         align-items: center;
