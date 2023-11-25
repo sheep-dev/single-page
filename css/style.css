@@ -130,7 +130,7 @@ video {
 
 .hero-right .hero-headings {
     width: 19rem;
-    height: 7rem;
+    height: 10rem;
 }
 
 .hero-headings .img-fluid {
@@ -159,7 +159,7 @@ video {
 
 .hero-right .playBtnDiv {
     width: auto;
-    height: 4.5rem;
+    height: 3.3rem;
     margin-top: 0.5rem;
 }
 
@@ -332,7 +332,7 @@ video {
     }
 
     .hero-left .bg-person {
-        height: 28rem;
+        height: 45rem;
         width: 100%;
     }
 
@@ -342,7 +342,7 @@ video {
     }
 
     .hero-right .hero-headings {
-        height: 13rem;
+        height: 25rem;
         width: 50rem;
     }
 }
